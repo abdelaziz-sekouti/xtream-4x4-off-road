@@ -27,15 +27,25 @@ export const Header = () => {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-night/95 backdrop-blur-md shadow-hard" : "bg-gradient-to-b from-night/70 to-transparent"
+        scrolled
+          ? "bg-night/95 backdrop-blur-md shadow-hard"
+          : "bg-gradient-to-b from-night/70 to-transparent"
       }`}
     >
       <div className="container-x flex items-center justify-between py-4">
         <a href="#home" className="flex items-center gap-3 group">
-          <img src={logo} alt="Atraxion 4x4" className="h-12 w-12 object-contain transition-transform group-hover:scale-110" />
+          <img
+            src={logo}
+            alt="Xtreme 4x4 off-road  4x4"
+            className="h-12 w-12 object-contain transition-transform group-hover:scale-110"
+          />
           <div className="hidden sm:block text-white leading-none">
-            <div className="font-display font-black text-lg tracking-wider">ATRAXION</div>
-            <div className="text-[10px] tracking-[0.3em] text-primary font-bold">4x4 EQUIPEMENTS</div>
+            <div className="font-display font-black text-lg tracking-wider">
+              Xtreme 4x4 off-road{" "}
+            </div>
+            <div className="text-[10px] tracking-[0.3em] text-primary font-bold">
+              4x4 EQUIPEMENTS
+            </div>
           </div>
         </a>
 
@@ -60,7 +70,10 @@ export const Header = () => {
           >
             {lang === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
           </button>
-          <a href="#contact" className="hidden md:inline-flex btn-red !py-3 !px-5 text-xs">
+          <a
+            href="#contact"
+            className="hidden md:inline-flex btn-red !py-3 !px-5 text-xs"
+          >
             Book Now
           </a>
           <button
@@ -86,7 +99,13 @@ export const Header = () => {
                 {l.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setOpen(false)} className="btn-red mt-2">Book Now</a>
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="btn-red mt-2"
+            >
+              Book Now
+            </a>
           </nav>
         </div>
       )}
