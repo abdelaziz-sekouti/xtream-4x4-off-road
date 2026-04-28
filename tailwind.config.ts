@@ -63,6 +63,23 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        display: ["Montserrat", "system-ui", "sans-serif"],
+        body: ["Poppins", "system-ui", "sans-serif"],
+      },
+      colors: {
+        night: {
+          DEFAULT: "hsl(var(--night))",
+          2: "hsl(var(--night-2))",
+        },
+        sand: "hsl(var(--sand))",
+        rust: "hsl(var(--rust))",
+      },
+      boxShadow: {
+        red: "var(--shadow-red)",
+        hard: "var(--shadow-hard)",
+        card: "var(--shadow-card)",
+      },
       keyframes: {
         "accordion-down": {
           from: {
