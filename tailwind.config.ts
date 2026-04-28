@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        night: {
+          DEFAULT: "hsl(var(--night))",
+          2: "hsl(var(--night-2))",
+        },
+        sand: "hsl(var(--sand))",
+        rust: "hsl(var(--rust))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,14 +72,6 @@ export default {
       fontFamily: {
         display: ["Montserrat", "system-ui", "sans-serif"],
         body: ["Poppins", "system-ui", "sans-serif"],
-      },
-      colors: {
-        night: {
-          DEFAULT: "hsl(var(--night))",
-          2: "hsl(var(--night-2))",
-        },
-        sand: "hsl(var(--sand))",
-        rust: "hsl(var(--rust))",
       },
       boxShadow: {
         red: "var(--shadow-red)",
