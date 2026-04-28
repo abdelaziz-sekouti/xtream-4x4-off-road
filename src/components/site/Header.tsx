@@ -41,7 +41,7 @@ export const Header = () => {
           />
           <div className="hidden sm:block text-white leading-none">
             <div className="font-display font-black text-lg tracking-wider">
-              Xtreme 4x4 off-road{" "}
+              Xtreme <br/>4x4 off-road{" "}
             </div>
             <div className="text-[10px] tracking-[0.3em] text-primary font-bold">
               Car repair and maintenance service
