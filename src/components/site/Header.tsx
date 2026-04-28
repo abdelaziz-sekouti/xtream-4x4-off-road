@@ -44,7 +44,7 @@ export const Header = () => {
               Xtreme 4x4 off-road{" "}
             </div>
             <div className="text-[10px] tracking-[0.3em] text-primary font-bold">
-              4x4 EQUIPEMENTS
+              Car repair and maintenance service
             </div>
           </div>
         </a>
