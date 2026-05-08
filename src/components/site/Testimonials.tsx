@@ -16,7 +16,7 @@ const reviews = [
   {
     name: "Marc Dupont",
     role: "Atlas Crossing · France",
-    text: "Best off-road experience of my life. The Xtreme 4x4 off-road  team knows every dune, every track. Already booking next year.",
+    text: "Best off-road experience of my life. The Site Title  team knows every dune, every track. Already booking next year.",
     rating: 5,
   },
 ];

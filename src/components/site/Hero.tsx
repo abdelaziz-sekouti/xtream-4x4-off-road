@@ -51,7 +51,7 @@ export const Hero = () => {
               Discover Packages <ArrowRight size={18} />
             </a>
             <a
-              href="https://wa.me/212661145645"
+              href="https://wa.me/212612236660"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline-light"
@@ -100,9 +100,9 @@ export const Hero = () => {
               onSubmit={(e) => {
                 e.preventDefault();
                 const f = new FormData(e.currentTarget);
-                const msg = `Hello Xtreme 4x4 off-road ! I'm ${f.get("name")}, dates: ${f.get("dates")}, my number: ${f.get("phone")}`;
+                const msg = `Hello Site Title ! I'm ${f.get("name")}, dates: ${f.get("dates")}, my number: ${f.get("phone")}`;
                 window.open(
-                  `https://wa.me/212661145645?text=${encodeURIComponent(msg)}`,
+                  `https://wa.me/212612236660?text=${encodeURIComponent(msg)}`,
                   "_blank",
                 );
               }}

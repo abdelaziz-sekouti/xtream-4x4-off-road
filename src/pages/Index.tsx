@@ -14,7 +14,7 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     document.title =
-      "Xtreme 4x4 off-road  4x4 — Off-Road Adventures, Tours & Vehicle Prep in Morocco";
+      "Site Title  4x4 — Off-Road Adventures, Tours & Vehicle Prep in Morocco";
 
     const ensureMeta = (name: string, content: string) => {
       let el = document.querySelector(
@@ -29,11 +29,11 @@ const Index = () => {
     };
     ensureMeta(
       "description",
-      "Xtreme 4x4 off-road  4x4: 25+ years of off-road expertise in Morocco. Custom 4x4 tours, desert expeditions, rally training & professional vehicle preparation.",
+      "Site Title  4x4: 25+ years of off-road expertise in Morocco. Custom 4x4 tours, desert expeditions, rally training & professional vehicle preparation.",
     );
     ensureMeta(
       "keywords",
-      "4x4 Morocco, desert tours Morocco, off-road adventure Morocco, Sahara expedition, rally training, vehicle preparation Tanger",
+      "4x4 Morocco, desert tours Morocco, off-road adventure Morocco, Sahara expedition, rally training, vehicle preparation Marrakech",
     );
 
     let canonical = document.querySelector(
@@ -49,18 +49,18 @@ const Index = () => {
     const ld = {
       "@context": "https://schema.org",
       "@type": "TravelAgency",
-      name: "Xtreme 4x4 off-road  4x4 Equipements",
+      name: "Site Title  4x4 Equipements",
       description:
         "Off-road 4x4 adventures, tours, training and vehicle preparation in Morocco and Africa.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "47 Av. Yakoub El Mansour",
-        addressLocality: "Tanger",
+        streetAddress: "Derb Boualam 185 S.Y.B.A.",
+        addressLocality: "Marrakech",
         postalCode: "90000",
         addressCountry: "MA",
       },
-      telephone: "+212661145645",
-      email: "Xtreme 4x4 off-road 4x4@yahoo.fr",
+      telephone: "+212612236660",
+      email: "Site Title 4x4@yahoo.fr",
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5.0",

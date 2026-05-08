@@ -17,12 +17,12 @@ export const Footer = () => {
             <div className="flex items-center gap-3 mb-6">
               <img
                 src={logo}
-                alt="Xtreme 4x4 off-road  4x4"
+                alt="Site Title  4x4"
                 className="h-14 w-14 object-contain"
               />
               <div>
                 <div className="font-display font-black text-xl tracking-wider">
-                  Xtreme 4x4 off-road{" "}
+                  Site Title{" "}
                 </div>
                 <div className="text-[10px] tracking-[0.3em] text-primary font-bold">
                   4x4 EQUIPEMENTS
@@ -78,12 +78,12 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
                 <span>
-                  47 Av. Yakoub El Mansour, Al Mansour, Tanger 90000, Morocco
+                  Derb Boualam 185 S.Y.B.A., Al Mansour, Marrakech 90000, Morocco
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-primary shrink-0" />
-                <a href="tel:+212661145645" className="hover:text-primary">
+                <a href="tel:+212612236660" className="hover:text-primary">
                   +212 (0) 06 61 72 06 63
                 </a>
               </li>
@@ -96,10 +96,10 @@ export const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary shrink-0" />
                 <a
-                  href="mailto:Xtreme 4x4 off-road 4x4@yahoo.fr"
+                  href="mailto:Site Title 4x4@yahoo.fr"
                   className="hover:text-primary"
                 >
-                  Xtreme 4x4 off-road 4x4@yahoo.fr
+                  Site Title 4x4@yahoo.fr
                 </a>
               </li>
             </ul>
@@ -124,7 +124,7 @@ export const Footer = () => {
               </li>
             </ul>
             <a
-              href="https://wa.me/212661145645"
+              href="https://wa.me/212612236660"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-red w-full mt-6 !py-3"
@@ -136,7 +136,7 @@ export const Footer = () => {
 
         <div className="pt-8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-white/40">
           <div>
-            © {new Date().getFullYear()} Xtreme 4x4 off-road 4x4 Equipements.
+            © {new Date().getFullYear()} Site Title 4x4 Equipements.
             All rights reserved.
           </div>
           <div className="flex gap-6">

@@ -34,7 +34,7 @@ export const WhyUs = () => {
         <div className="grid lg:grid-cols-12 gap-12 items-end mb-16">
           <div className="lg:col-span-7">
             <span className="eyebrow text-primary">
-              Why Xtreme 4x4 off-road{" "}
+              Why Site Title{" "}
             </span>
             <h2 className="heading-display text-4xl md:text-6xl mt-4">
               Built on <span className="text-primary">Trust</span>. <br />{" "}

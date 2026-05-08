@@ -36,7 +36,7 @@ export const Header = () => {
         <a href="#home" className="flex items-center gap-3 group">
           <img
             src={logo}
-            alt="Xtreme 4x4 off-road  4x4"
+            alt="Site Title  4x4"
             className="h-12 w-12 object-contain transition-transform group-hover:scale-110"
           />
           <div className="hidden sm:block text-white leading-none">
