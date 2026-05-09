@@ -139,7 +139,7 @@ export const Footer = () => {
               href="https://wa.me/212612236660"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-red w-full mt-6 !py-3"
+              className="btn-red w-full mt-6 !py-3 hover:bg-transparent hover:border-2 hover:border-primary"
             >
               Chat on WhatsApp
             </a>

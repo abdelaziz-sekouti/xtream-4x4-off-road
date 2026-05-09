@@ -41,7 +41,7 @@ export const Featured = () => {
             ))}
           </ul>
 
-          <a href="#packages" className="btn-red mt-10">
+          <a href="#packages" className="btn-red mt-10 hover:bg-transparent hover:border-2 border-primary">
             Explore Adventures <ArrowRight size={18} />
           </a>
         </div>

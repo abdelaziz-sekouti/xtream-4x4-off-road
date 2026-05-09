@@ -46,7 +46,7 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
-            <a href="#packages" className="btn-red">
+            <a href="#packages" className="btn-red hover:bg-transparent border-primary hover:border-2">
               Discover Packages <ArrowRight size={18} />
             </a>
             <a

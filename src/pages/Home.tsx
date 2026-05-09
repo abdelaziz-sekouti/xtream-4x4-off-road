@@ -6,7 +6,9 @@ import { Featured } from "@/components/site/Featured";
 import { Blog } from "@/components/site/Blog";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
+import { Parallax } from "@/components/ui/Parallax";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -75,12 +77,32 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-background">
-      <TopBar />
+    <main className="min-h-screen ">
       <Header />
       <Hero />
       <Services />
       <Featured />
+
+      {/* Parallax Section */}
+      <Parallax
+        backgroundImage="/desert.jpg"
+        height="h-screen"
+        overlay={true}
+        speed={0.5}
+      >
+        <div className="text-center text-white">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            Experience the <span className="text-primary">Sahara</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8">
+            Conquer the dunes with our expert-guided 4x4 adventures
+          </p>
+          <Link to="/contact" className="btn-red text-lg px-8 py-4 hover:bg-transparent hover:border-2 border-primary">
+            Book Your Adventure
+          </Link>
+        </div>
+      </Parallax>
+
       <Blog />
       <Footer />
       <WhatsAppFloat />

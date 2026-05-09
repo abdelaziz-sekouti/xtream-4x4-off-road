@@ -11,7 +11,7 @@ export const TopBar = () => {
             <div className="flex items-center gap-2">
               <Phone size={14} className="text-primary" />
               <a href="tel:+212612236660" className="hover:text-primary transition-colors">
-                +212 (0) 06 12236660
+                +212 (0) 6 12236660
               </a>
             </div>
             <div className="flex items-center gap-2">
@@ -20,9 +20,9 @@ export const TopBar = () => {
                 sekoutiabdelaziz0@gmail.com
               </a>
             </div>
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-2 hover:text-primary ">
               <MapPin size={14} className="text-primary" />
-              <span>Marrakech, Morocco</span>
+              <span>Derb Boualam 185 S.Y.B.A. Marrakech, Morocco</span>
             </div>
           </div>
 

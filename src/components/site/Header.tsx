@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { TopBar } from "./TopBar";
 
 const links = [
   { label: "Home", href: "/" },
@@ -27,12 +28,13 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed lg:top-10 top-0 inset-x-0 z-50 transition-all duration-500 ${
+      className={`fixed  top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
           ? "bg-night/95 backdrop-blur-md shadow-hard"
           : "bg-gradient-to-b from-night/70 to-transparent"
       }`}
     >
+      <TopBar/>
       <div className="container-x flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-3 group">
           <img
@@ -80,7 +82,7 @@ export const Header = () => {
           </button> */}
           <Link
             to="/contact"
-            className="hidden md:ml-2 md:inline-flex btn-red !py-3 !px-5 text-xs  md:w-fit"
+            className="hover:!bg-transparent  hover:border-y-2 hover:border-primary hidden md:ml-2 md:inline-flex btn-red !py-3 !px-5 text-xs  md:w-fit"
           >
             Book Now
           </Link>

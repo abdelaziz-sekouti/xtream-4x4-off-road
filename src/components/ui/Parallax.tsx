@@ -1,20 +1,31 @@
 import { useEffect, useRef } from "react";
 
 interface ParallaxProps {
+  backgroundImage: string;
   children: React.ReactNode;
   speed?: number;
-  className?: string;
+  height?: string;
+  overlay?: boolean;
 }
 
-export const Parallax = ({ children, speed = 0.5, className = "" }: ParallaxProps) => {
+export const Parallax = ({
+  backgroundImage,
+  children,
+  speed = 0.5,
+  height = "h-screen",
+  overlay = true
+}: ParallaxProps) => {
   const parallaxRef = useRef<HTMLDivElement>(null);
+
+  console.log('Parallax component rendered with:', { backgroundImage, speed, height, overlay });
 
   useEffect(() => {
     const handleScroll = () => {
       if (parallaxRef.current) {
         const scrolled = window.pageYOffset;
-        const rate = scrolled * speed;
+        const rate = scrolled * -speed; // Negative for upward movement
         parallaxRef.current.style.transform = `translateY(${rate}px)`;
+        console.log('Parallax scroll applied:', rate);
       }
     };
 
@@ -23,45 +34,28 @@ export const Parallax = ({ children, speed = 0.5, className = "" }: ParallaxProp
   }, [speed]);
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      <div ref={parallaxRef} className="w-full h-full">
-        {children}
+    <section className={`relative ${height} overflow-hidden bg-blue-500`}>
+      {/* Debug: Make sure component renders */}
+      <div className="absolute top-4 left-4 bg-white p-2 text-black text-sm z-50">
+        Parallax Component Active
       </div>
-    </div>
-  );
-};
 
-interface ParallaxSectionProps {
-  backgroundImage: string;
-  children: React.ReactNode;
-  height?: string;
-  overlay?: boolean;
-  speed?: number;
-}
+      {/* Background Image */}
+      <div
+        ref={parallaxRef}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      />
 
-export const ParallaxSection = ({
-  backgroundImage,
-  children,
-  height = "h-screen",
-  overlay = true,
-  speed = 0.5
-}: ParallaxSectionProps) => {
-  return (
-    <div className={`relative ${height} overflow-hidden`}>
-      <Parallax speed={speed}>
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        />
-      </Parallax>
-
+      {/* Overlay */}
       {overlay && (
         <div className="absolute inset-0 bg-black/50" />
       )}
 
+      {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
         {children}
       </div>
-    </div>
+    </section>
   );
 };
