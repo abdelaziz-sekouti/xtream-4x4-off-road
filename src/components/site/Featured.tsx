@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import featured from "@/assets/featured-morocco.jpg";
 
 export const Featured = () => {
   return (
@@ -8,7 +7,7 @@ export const Featured = () => {
         <div className="relative">
           <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-primary hidden md:block" />
           <div className="relative overflow-hidden">
-            <img src={featured} alt="4x4 climbing Sahara dune in Morocco" loading="lazy" width={1280} height={1024} className="w-full h-[520px] object-cover" />
+            <img src="https://picsum.photos/seed/morocco/1280/1024" alt="4x4 climbing Sahara dune in Morocco" loading="lazy" width={1280} height={1024} className="w-full h-[520px] object-cover" />
             <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-night-2 to-transparent h-1/3" />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 hidden md:block shadow-red">

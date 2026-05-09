@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -35,7 +34,7 @@ export const Header = () => {
       <div className="container-x flex items-center justify-between py-4">
         <a href="#home" className="flex items-center gap-3 group">
           <img
-            src={logo}
+            src="https://picsum.photos/seed/logo/48/48"
             alt="Site Title  4x4"
             className="h-12 w-12 object-contain transition-transform group-hover:scale-110"
           />

@@ -1,18 +1,12 @@
 import { Clock, MapPin, ArrowRight } from "lucide-react";
-import desert from "@/assets/pkg-desert.jpg";
-import atlas from "@/assets/pkg-atlas.jpg";
-import training from "@/assets/pkg-training.jpg";
-import rental from "@/assets/service-rental.jpg";
-import tours from "@/assets/service-tours.jpg";
-import featured from "@/assets/featured-morocco.jpg";
 
 const packages = [
-  { img: desert, tag: "Expedition", title: "Desert Expedition", duration: "5 Days", location: "Merzouga · Erg Chebbi", desc: "Conquer the legendary red dunes, sleep under the stars at our private camp." },
-  { img: atlas, tag: "Discovery", title: "Atlas Crossing", duration: "7 Days", location: "High Atlas · Dades", desc: "Snow peaks, gorges and Berber villages — the most diverse route in Morocco." },
-  { img: training, tag: "Training", title: "Rally Driving School", duration: "3 Days", location: "Tangier Region", desc: "Master sand, mud, and rocks with FIA-certified instructors." },
-  { img: tours, tag: "Premium", title: "Sahara Grand Tour", duration: "10 Days", location: "Marrakech → Sahara", desc: "The full Moroccan experience: imperial cities, oases, and endless dunes." },
-  { img: featured, tag: "Adventure", title: "Africa Raid", duration: "21 Days", location: "Morocco → Mauritania", desc: "The ultimate cross-border raid for true off-road veterans." },
-  { img: rental, tag: "Custom", title: "Build Your Own", duration: "Flexible", location: "Anywhere · Morocco", desc: "Tell us your dream — we'll design it, equip it, and guide you through it." },
+  { img: "https://picsum.photos/seed/dunes/800/600", tag: "Expedition", title: "Desert Expedition", duration: "5 Days", location: "Merzouga · Erg Chebbi", desc: "Conquer the legendary red dunes, sleep under the stars at our private camp." },
+  { img: "https://picsum.photos/seed/mountains/800/600", tag: "Discovery", title: "Atlas Crossing", duration: "7 Days", location: "High Atlas · Dades", desc: "Snow peaks, gorges and Berber villages — the most diverse route in Morocco." },
+  { img: "https://picsum.photos/seed/rally/800/600", tag: "Training", title: "Rally Driving School", duration: "3 Days", location: "Tangier Region", desc: "Master sand, mud, and rocks with FIA-certified instructors." },
+  { img: "https://picsum.photos/seed/sahara/800/600", tag: "Premium", title: "Sahara Grand Tour", duration: "10 Days", location: "Marrakech → Sahara", desc: "The full Moroccan experience: imperial cities, oases, and endless dunes." },
+  { img: "https://picsum.photos/seed/adventure/800/600", tag: "Adventure", title: "Africa Raid", duration: "21 Days", location: "Morocco → Mauritania", desc: "The ultimate cross-border raid for true off-road veterans." },
+  { img: "https://picsum.photos/seed/custom/800/600", tag: "Custom", title: "Build Your Own", duration: "Flexible", location: "Anywhere · Morocco", desc: "Tell us your dream — we'll design it, equip it, and guide you through it." },
 ];
 
 export const Packages = () => {

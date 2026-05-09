@@ -1,12 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
-import a from "@/assets/pkg-desert.jpg";
-import b from "@/assets/pkg-atlas.jpg";
-import c from "@/assets/service-prep.jpg";
 
 const posts = [
-  { img: a, date: "Apr 2026", category: "Stories", title: "Crossing the Erg Chebbi: A 5-Day Sahara Diary", excerpt: "How three friends from Berlin discovered Morocco's wildest side behind the wheel of a Land Cruiser." },
-  { img: b, date: "Mar 2026", category: "Advice", title: "What to Pack for Your First Off-Road Trip", excerpt: "From recovery boards to sand goggles — the essentials our 25-year veterans never travel without." },
-  { img: c, date: "Feb 2026", category: "Tech", title: "Why Vehicle Preparation Saves Lives", excerpt: "A real story from the Dakar route, and why a properly-prepped 4x4 makes all the difference." },
+  { img: "https://picsum.photos/seed/diary/800/600", date: "Apr 2026", category: "Stories", title: "Crossing the Erg Chebbi: A 5-Day Sahara Diary", excerpt: "How three friends from Berlin discovered Morocco's wildest side behind the wheel of a Land Cruiser." },
+  { img: "https://picsum.photos/seed/pack/800/600", date: "Mar 2026", category: "Advice", title: "What to Pack for Your First Off-Road Trip", excerpt: "From recovery boards to sand goggles — the essentials our 25-year veterans never travel without." },
+  { img: "https://picsum.photos/seed/prep/800/600", date: "Feb 2026", category: "Tech", title: "Why Vehicle Preparation Saves Lives", excerpt: "A real story from the Dakar route, and why a properly-prepped 4x4 makes all the difference." },
 ];
 
 export const Blog = () => {

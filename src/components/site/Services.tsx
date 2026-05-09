@@ -1,12 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
-import rental from "@/assets/service-rental.jpg";
-import tours from "@/assets/service-tours.jpg";
-import prep from "@/assets/service-prep.jpg";
 
 const services = [
-  { num: "01", title: "4x4 Rental", desc: "Premium fleet of fully-equipped Land Cruisers, Defenders & pickups ready for any terrain.", img: rental },
-  { num: "02", title: "Adventure Tours", desc: "Custom expeditions across the Sahara, Atlas Mountains, and beyond — from 3 to 21 days.", img: tours },
-  { num: "03", title: "Vehicle Preparation", desc: "Professional rally prep: suspension, snorkels, roof racks, protection — built to survive.", img: prep },
+  { num: "01", title: "4x4 Rental", desc: "Premium fleet of fully-equipped Land Cruisers, Defenders & pickups ready for any terrain.", img: "https://picsum.photos/seed/jeep/800/600" },
+  { num: "02", title: "Adventure Tours", desc: "Custom expeditions across the Sahara, Atlas Mountains, and beyond — from 3 to 21 days.", img: "https://picsum.photos/seed/tour/800/600" },
+  { num: "03", title: "Vehicle Preparation", desc: "Professional rally prep: suspension, snorkels, roof racks, protection — built to survive.", img: "https://picsum.photos/seed/mechanic/800/600" },
 ];
 
 export const Services = () => {

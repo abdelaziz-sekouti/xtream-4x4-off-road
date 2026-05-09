@@ -1,5 +1,4 @@
 import { ArrowRight, MessageCircle, Calendar, User, Phone } from "lucide-react";
-import hero from "@/assets/hero-desert.jpg";
 
 export const Hero = () => {
   return (
@@ -10,7 +9,7 @@ export const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={hero}
+          src="https://picsum.photos/seed/desert/1920/1080"
           alt="4x4 Land Cruiser racing through Moroccan Sahara desert at sunset"
           className="w-full h-full object-cover animate-ken-burns"
           width={1920}

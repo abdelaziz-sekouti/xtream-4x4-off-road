@@ -6,7 +6,6 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -16,7 +15,7 @@ export const Footer = () => {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src={logo}
+                src="https://picsum.photos/seed/logo/48/48"
                 alt="Site Title  4x4"
                 className="h-14 w-14 object-contain"
               />
@@ -78,28 +77,28 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
                 <span>
-                  Derb Boualam 185 S.Y.B.A., Al Mansour, Marrakech 90000, Morocco
+                  Derb Boualam 185 S.Y.B.A. Marrakech 40050, Morocco
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-primary shrink-0" />
                 <a href="tel:+212612236660" className="hover:text-primary">
-                  +212 (0) 06 61 72 06 63
+                  +212 (0) 06 12236660
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-primary shrink-0" />
-                <a href="tel:+212524355558" className="hover:text-primary">
-                  +212 (0) 06 61 72 06 63
+                <a href="tel:+21212236660" className="hover:text-primary">
+                  +212 (0) 06 12236660
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary shrink-0" />
                 <a
-                  href="mailto:Site Title 4x4@yahoo.fr"
+                  href="mailto:sekoutiabdelaziz0@gmail.com"
                   className="hover:text-primary"
                 >
-                  Site Title 4x4@yahoo.fr
+                  sekoutiabdelaziz0@gmail.com
                 </a>
               </li>
             </ul>
