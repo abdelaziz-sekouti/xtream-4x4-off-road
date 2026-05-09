@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
   Facebook,
   Instagram,
@@ -5,9 +6,21 @@ import {
   Mail,
   Phone,
   MapPin,
+  ArrowUp,
 } from "lucide-react";
 
 export const Footer = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <footer id="contact" className="bg-night text-white pt-24 pb-8">
       <div className="container-x">
@@ -151,6 +164,19 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 left-6 w-12 h-12 bg-primary hover:bg-primary/80 text-white shadow-lg hover:shadow-xl flex items-center justify-center z-50 transition-all duration-300 ${
+          showScrollTop
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 translate-y-4 pointer-events-none'
+        }`}
+        aria-label="Scroll to top"
+      >
+        <ArrowUp size={20} />
+      </button>
     </footer>
   );
 };

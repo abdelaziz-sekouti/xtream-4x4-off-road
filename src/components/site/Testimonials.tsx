@@ -2,19 +2,19 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Fayçal Touhami",
+    name: "Abdel",
     role: "Adventure Tour · Morocco",
     text: "They're absolute pros at 4x4 driving. Knowledge, professionalism and pure passion — well done team!",
     rating: 5,
   },
   {
-    name: "Aya Rahmani",
+    name: "Aya",
     role: "Desert Expedition",
     text: "Excellent work from start to finish. The vehicle prep was flawless and the guides made the trip unforgettable.",
     rating: 5,
   },
   {
-    name: "Marc Dupont",
+    name: "Belmondo",
     role: "Atlas Crossing · France",
     text: "Best off-road experience of my life. The Site Title  team knows every dune, every track. Already booking next year.",
     rating: 5,
