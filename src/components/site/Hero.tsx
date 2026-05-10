@@ -92,7 +92,7 @@ export const Hero = () => {
                 <div className="text-white font-display font-bold uppercase tracking-wider text-sm">
                   Quick Booking
                 </div>
-                <div className="text-white/50 text-xs">Reply within 1 hour</div>
+                <div className="text-white/50 text-xs">Reply Within 1 Hour</div>
               </div>
             </div>
             <form
