@@ -44,7 +44,7 @@ export const Header = () => {
           />
           <div className="hidden sm:block text-white leading-none">
             <div className="font-display font-black text-lg tracking-wider">
-             Site Title{" "}
+             Site Title Here{" "}
             </div>
             <div className="text-[10px] tracking-[0.3em] text-primary font-bold">
               Car repair and maintenance service
